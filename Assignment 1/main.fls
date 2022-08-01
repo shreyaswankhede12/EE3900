@@ -1,9 +1,9 @@
-PWD /home/shreyas/Documents/gvv/ee course
+PWD /home/shreyas/Documents/gvv/EE course
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/shreyas/Documents/gvv/ee course/main.tex
+INPUT /home/shreyas/Documents/gvv/EE course/main.tex
 OUTPUT main.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
@@ -867,12 +867,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/tcxr.tfm
-INPUT ./codes/Cancel_noise.py
-INPUT ./codes/Cancel_noise.py
-INPUT ./codes/Cancel_noise.py
-INPUT ./codes/Cancel_noise.py
-INPUT ./codes/Cancel_noise.py
-INPUT ./codes/Cancel_noise.py
+INPUT ./figs/3.1 xn.pdf
+INPUT figs/3.1 xn.pdf
+INPUT ./figs/3.1 xn.pdf
+INPUT ./figs/3.1 xn.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/txfonts/txr.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
@@ -902,12 +900,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtxptmb.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/txfonts/tcxr.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtcxr.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/txfonts/txi.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtxi.tfm
-INPUT ./figs/xnyn.pdf
-INPUT figs/xnyn.pdf
-INPUT ./figs/xnyn.pdf
-INPUT ./figs/xnyn.pdf
+INPUT ./figs/3.2 yn.pdf
+INPUT figs/3.2 yn.pdf
+INPUT ./figs/3.2 yn.pdf
+INPUT ./figs/3.2 yn.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/txfonts/txmi.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
@@ -927,6 +923,8 @@ INPUT ./figs/ynconv.pdf
 INPUT figs/ynconv.pdf
 INPUT ./figs/ynconv.pdf
 INPUT ./figs/ynconv.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/txfonts/txi.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtxi.tfm
 INPUT ./figs/yndft.pdf
 INPUT figs/yndft.pdf
 INPUT ./figs/yndft.pdf
@@ -937,7 +935,6 @@ INPUT ./main.out
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb

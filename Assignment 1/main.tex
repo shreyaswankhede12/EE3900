@@ -244,7 +244,10 @@ are audible along with background noise.
 Write the python code for removal of out of band noise and execute the code.
 \\
 \solution
-\lstinputlisting{./codes/Cancel_noise.py}
+\begin{lstlisting}
+	https://github.com/shreyaswankhede12/EE3900/blob/master/codes/Cancel_noise.py
+\end{lstlisting}
+% \lstinputlisting{codes/Cancel_noise.py}
 %\begin{figure}[h]
 %\centering
 %\includegraphics[width=\columnwidth]{enc_block_diag.png}
@@ -264,6 +267,13 @@ The output of the python script in Problem \ref{prob:output} is the audio file S
 x(n) = \cbrak{\underset{\uparrow}{1},2,3,4,2,1}
 \end{equation}
 Sketch $x(n)$.
+\begin{figure}[!ht]
+	\begin{center}
+	\includegraphics[width=\columnwidth]{figs/3.1 xn}
+	\end{center}
+	\captionof{figure}{}
+	\label{fig:xn}	
+	\end{figure}
 \item Let
 \begin{multline}
 \label{eq:iir_filter}
@@ -272,18 +282,18 @@ y(n) + \frac{1}{2}y(n-1) = x(n) + x(n-2),
  y(n) = 0, n < 0
 \end{multline}
 Sketch $y(n)$.
+\begin{figure}[!ht]
+	\begin{center}
+	\includegraphics[width=\columnwidth]{figs/3.2 yn}
+	\end{center}
+	\captionof{figure}{}
+	\label{fig:xnyn}	
+	\end{figure}
 \\
 \solution The following code yields Fig. \ref{fig:xnyn}.
 \begin{lstlisting}
 wget https://github.com/gadepall/EE1310/raw/master/filter/codes/xnyn.py
 \end{lstlisting}
-\begin{figure}[!ht]
-\begin{center}
-\includegraphics[width=\columnwidth]{figs/xnyn}
-\end{center}
-\captionof{figure}{}
-\label{fig:xnyn}	
-\end{figure}
 \end{enumerate}
 \section{$Z$-transform}
 \begin{enumerate}[label=\thesection.\arabic*]
@@ -373,6 +383,15 @@ using the fomula for the sum of an infinite geometric progression.
 \label{eq:anun}
 a^nu(n) \ztrans \frac{1}{1-az^{-1}} \quad \abs{z} > \abs{a}
 \end{equation}
+\solution 
+\begin{align}
+     {\mathcal {Z}}\{a^nu(n)\} &=\sum _{n=-\infty }^{\infty }a^nu(n)z^{-n} \\
+     &= \sum _{n=0}^{\infty }a^nz^{-n} \\
+     &= \sum _{n=0}^{\infty } \left(az^{-1}\right)^n \\
+     &= \frac{1}{1-az^{-1}}, \quad \abs{az^{-1}} < 1
+\end{align}
+using the fomula for the sum of an infinite geometric progression.
+
 %
 \item 
 Let
@@ -551,3 +570,4 @@ Modifying the code with different input parameters and to get the best possible 
 %
 \end{enumerate}
 \end{document}
+
