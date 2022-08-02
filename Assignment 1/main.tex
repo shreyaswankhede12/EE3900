@@ -218,8 +218,7 @@ sudo pip install cffi pysoundfile
 \label{prob:input}
 Download the sound file from  
 \begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/ 
-EE1310/master/filter/codes/Sound_Noise.wav
+	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/sound/Sound_Noise.wav
 \end{lstlisting}
 %\href{http://tlc.iith.ac.in/img/sound/Sound_Noise.wav}{\url{http://tlc.iith.ac.in/img/sound/Sound_Noise.wav}}  
 %in the link given below.
@@ -245,7 +244,7 @@ Write the python code for removal of out of band noise and execute the code.
 \\
 \solution
 \begin{lstlisting}
-	https://github.com/shreyaswankhede12/EE3900/blob/master/codes/Cancel_noise.py
+	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%202/Cancel_noise.py
 \end{lstlisting}
 % \lstinputlisting{codes/Cancel_noise.py}
 %\begin{figure}[h]
@@ -292,7 +291,8 @@ Sketch $y(n)$.
 \\
 \solution The following code yields Fig. \ref{fig:xnyn}.
 \begin{lstlisting}
-wget https://github.com/gadepall/EE1310/raw/master/filter/codes/xnyn.py
+	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%203/xn.py\\
+	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%203/yn.py
 \end{lstlisting}
 \end{enumerate}
 \section{$Z$-transform}
@@ -304,6 +304,7 @@ wget https://github.com/gadepall/EE1310/raw/master/filter/codes/xnyn.py
 X(z)={\mathcal {Z}}\{x(n)\}=\sum _{n=-\infty }^{\infty }x(n)z^{-n}
 \end{equation}
 %
+
 Show that
 \begin{equation}
 \label{eq:shift1}
@@ -403,11 +404,11 @@ known as the {\em Discret Time Fourier Transform} (DTFT) of $x(n)$.
 \\
 \solution The following code plots Fig. \ref{fig:dtft}.
 \begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.py
+	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%204/%20dtft.py
 \end{lstlisting}
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=\columnwidth]{figs/dtft}
+\includegraphics[width=\columnwidth]{figs/4.5 dtft}
 \caption{$\abs{H\brak{e^{\j\omega}}}$}
 \label{fig:dtft}
 \end{figure}
@@ -435,11 +436,11 @@ using \eqref{eq:anun} and \eqref{eq:z_trans_shift}.
 \\
 \solution The following code plots Fig. \ref{fig:hn}.
 \begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hn.py
+	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%205/hn.py
 \end{lstlisting}
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=\columnwidth]{figs/hn}
+\includegraphics[width=\columnwidth]{figs/5.2 hn}
 \caption{$h(n)$ as the inverse of $H(z)$}
 \label{fig:hn}
 \end{figure}
@@ -463,11 +464,11 @@ This is the definition of $h(n)$.
 \ref{fig:hn}. 
 %
 \begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hndef.py
+	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%205/hndef.py
 \end{lstlisting}
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=\columnwidth]{figs/hndef}
+\includegraphics[width=\columnwidth]{figs/5.4 hndef}
 \caption{$h(n)$ from the definition}
 \label{fig:hndef}
 \end{figure}
@@ -488,11 +489,11 @@ $y(n)$ in  Fig.
 \ref{fig:xnyn}. 
 %
 \begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/ynconv.py
+	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%205/ynconv.py
 \end{lstlisting}
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=\columnwidth]{figs/ynconv}
+\includegraphics[width=\columnwidth]{figs/5.5 ynconv}
 \caption{$y(n)$ from the definition of convolution}
 \label{fig:ynconv}
 \end{figure}
@@ -524,11 +525,11 @@ $y(n)$ in  Fig.
 \ref{fig:xnyn}. 
 %
 \begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yndft.py
+	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%206/yndft.py
 \end{lstlisting}
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=\columnwidth]{figs/yndft}
+\includegraphics[width=\columnwidth]{figs/6.3 yndft}
 \caption{$y(n)$ from the DFT}
 \label{fig:yndft}
 \end{figure}

@@ -1,9 +1,9 @@
-PWD /home/shreyas/Documents/gvv/EE course
+PWD /home/shreyas/Documents/gvv/EE course/Assignment 1
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/shreyas/Documents/gvv/EE course/main.tex
+INPUT /home/shreyas/Documents/gvv/EE course/Assignment 1/main.tex
 OUTPUT main.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
@@ -904,31 +904,35 @@ INPUT ./figs/3.2 yn.pdf
 INPUT figs/3.2 yn.pdf
 INPUT ./figs/3.2 yn.pdf
 INPUT ./figs/3.2 yn.pdf
+INPUT /usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/txfonts/txmi.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
-INPUT ./figs/dtft.pdf
-INPUT figs/dtft.pdf
-INPUT ./figs/dtft.pdf
-INPUT ./figs/dtft.pdf
-INPUT ./figs/hn.pdf
-INPUT figs/hn.pdf
-INPUT ./figs/hn.pdf
-INPUT ./figs/hn.pdf
-INPUT ./figs/hndef.pdf
-INPUT figs/hndef.pdf
-INPUT ./figs/hndef.pdf
-INPUT ./figs/hndef.pdf
-INPUT ./figs/ynconv.pdf
-INPUT figs/ynconv.pdf
-INPUT ./figs/ynconv.pdf
-INPUT ./figs/ynconv.pdf
+INPUT ./figs/4.5 dtft.pdf
+INPUT figs/4.5 dtft.pdf
+INPUT ./figs/4.5 dtft.pdf
+INPUT ./figs/4.5 dtft.pdf
+INPUT ./figs/5.2 hn.pdf
+INPUT figs/5.2 hn.pdf
+INPUT ./figs/5.2 hn.pdf
+INPUT ./figs/5.2 hn.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/txfonts/txi.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtxi.tfm
-INPUT ./figs/yndft.pdf
-INPUT figs/yndft.pdf
-INPUT ./figs/yndft.pdf
-INPUT ./figs/yndft.pdf
+INPUT ./figs/5.4 hndef.pdf
+INPUT figs/5.4 hndef.pdf
+INPUT ./figs/5.4 hndef.pdf
+INPUT ./figs/5.4 hndef.pdf
+INPUT ./figs/5.5 ynconv.pdf
+INPUT figs/5.5 ynconv.pdf
+INPUT ./figs/5.5 ynconv.pdf
+INPUT ./figs/5.5 ynconv.pdf
+INPUT ./figs/6.3 yndft.pdf
+INPUT figs/6.3 yndft.pdf
+INPUT ./figs/6.3 yndft.pdf
+INPUT ./figs/6.3 yndft.pdf
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
