@@ -294,6 +294,7 @@ Sketch $y(n)$.
 	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%203/xn.py\\
 	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%203/yn.py
 \end{lstlisting}
+\item Repeat the above exercise using a C code.
 \end{enumerate}
 \section{$Z$-transform}
 \begin{enumerate}[label=\thesection.\arabic*]
@@ -444,13 +445,29 @@ using \eqref{eq:anun} and \eqref{eq:z_trans_shift}.
 \caption{$h(n)$ as the inverse of $H(z)$}
 \label{fig:hn}
 \end{figure}
+The sequence is convergnet to $0$ and hence bounded as well.
 %
 \item The system with $h(n)$ is defined to be stable if
 \begin{equation}
 \sum_{n=-\infty}^{\infty}h(n) < \infty
 \end{equation}
-Is the system defined by \eqref{eq:iir_filter} stable for the impulse response in \eqref{eq:impulse_resp}?
+Is the system defined by \eqref{eq:iir_filter} stable for the impulse response in \eqref{eq:impulse_resp}?\\
 %
+\solution
+	\begin{multline}
+		\sum_{n=-\infty}^{\infty}h(n) = \sum_{n=-\infty}^{\infty} \brak{-\frac12}^n u(n) \\
+		+ \sum_{n=-\infty}^{\infty} \brak{-\frac12}^{n-2} u(n-2)
+	\end{multline}
+	\begin{align}
+		\sum_{n=-\infty}^{\infty}h(n) = \sum_{n=0}^{\infty}\brak{-\frac12}^n + \sum_{n=2}^{\infty}\brak{-\frac12}^{n-2}
+	\end{align}
+	
+	\begin{align}
+		\sum_{n=-\infty}^{\infty}h(n) &= \frac{1}{1 - \brak{-\frac12}} + \frac{1}{1 - \brak{-\frac12}} \\
+		&= \frac{4}{3} < \infty
+	\end{align}
+	
+	Therefore, the system is stable.
 \item 
 Compute and sketch $h(n)$ using 
 \begin{equation}
@@ -481,7 +498,13 @@ y(n) = x(n)*h(n) = \sum_{n=-\infty}^{\infty}x(k)h(n-k)
 \end{equation}
 %
 Comment. The operation in \eqref{eq:convolution} is known as
-{\em convolution}.
+{\em convolution}.\\
+\solution
+	\begin{align}
+		x(n)*h(n) &= \sum_{k=-\infty}^{\infty}x(k)h(n-k) \\
+		&= \sum_{k=0}^{5}x(k)h(n-k)
+	\end{align}
+	since $x(k) = 0$ for $k < 0$ and $k > 5$ 
 %
 \\
 \solution The following code plots Fig. \ref{fig:ynconv}. Note that this is the same as 
@@ -501,6 +524,23 @@ $y(n)$ in  Fig.
 \begin{equation}
 y(n) =  \sum_{n=-\infty}^{\infty}x(n-k)h(k)
 \end{equation}
+\solution We know that
+	\begin{equation}
+		y(n) = x(n)*h(n) = \sum_{k=-\infty}^{\infty}x(k)h(n-k)
+	\end{equation}
+	
+	Substitute $k = n - i$
+	\begin{align}
+		 \sum_{k=-\infty}^{\infty}x(k)h(n-k) &=  \sum_{n - i =-\infty}^{\infty}x(n-i)h(n-(n-i)) \\
+		 &= \sum_{i = \infty}^{-\infty} x(n - i) h(i) \\
+		 &= \sum_{i = -\infty}^{\infty} x(n - i) h(i)
+	\end{align}
+	since the order of limits does not matter for a summation.
+	Thus,
+	\begin{align}
+		\sum_{k=-\infty}^{\infty}x(k)h(n-k) &= \sum_{k=-\infty}^{\infty}x(n-k)h(k) \\
+		\implies x(n) * h(n) &= h(n) * x(n)
+	\end{align}
 \end{enumerate}
 %
 \section{DFT and FFT}

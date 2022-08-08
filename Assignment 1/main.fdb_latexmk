@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1659420665 "/home/shreyas/Documents/gvv/EE course/Assignment 1/main.tex" "main.pdf" "main" 1659420666
+["pdflatex"] 1659866076 "/home/shreyas/Documents/gvv/EE course/Assignment 1/main.tex" "main.pdf" "main" 1659866076
   "/etc/texmf/web2c/texmf.cnf" 1656677652 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/shreyas/Documents/gvv/EE course/Assignment 1/main.tex" 1659420665 18330 8b32b32578caa25feb4ca656fcfff21c ""
+  "/home/shreyas/Documents/gvv/EE course/Assignment 1/main.tex" 1659866075 19704 6f34fbdc7d0edbf4cb71cef853a6e148 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -146,10 +146,10 @@
   "figs/5.4 hndef.pdf" 1659355289 14354 74f08e374e61f0a9249e604855f62058 ""
   "figs/5.5 ynconv.pdf" 1659355342 14207 9144c3f60856ba57535b0113ea45b3b8 ""
   "figs/6.3 yndft.pdf" 1659355377 13840 5c54f2ef6f416e205d36986528cee372 ""
-  "main.aux" 1659420666 4244 051014132616a62dffeceb196e97d7f6 "pdflatex"
-  "main.out" 1659420666 824 ede0bd39395c52b880a8a7eb6eb76c7d "pdflatex"
-  "main.tex" 1659420665 18330 8b32b32578caa25feb4ca656fcfff21c ""
-  "main.toc" 1659420666 495 fd1271a5335301ee486459063b63cb04 "pdflatex"
+  "main.aux" 1659866076 4246 c3e3f4df919639b0163a36b18b6f94e8 "pdflatex"
+  "main.out" 1659866076 824 ede0bd39395c52b880a8a7eb6eb76c7d "pdflatex"
+  "main.tex" 1659866075 19704 6f34fbdc7d0edbf4cb71cef853a6e148 ""
+  "main.toc" 1659866076 495 87d440cacac6fc74998add0c41190dd9 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
