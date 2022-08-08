@@ -23,7 +23,7 @@ double Y(int n){
 
 int main(){
     FILE *p = fopen("xn_yn_output.dat", "w");
-	for (int i = 0; i < 6; i++) {
+	for (int i = 0; i < 20; i++) {
 		fprintf(p, "%lf\n", Y(i));
 	}
 	fclose(p);
