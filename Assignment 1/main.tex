@@ -38,7 +38,7 @@
 %\usepackage{iithtlc}
 %\usepackage[framemethod=tikz]{mdframed}
 \usepackage{listings}
-
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 
 %\usepackage{stmaryrd}
 
@@ -295,6 +295,10 @@ Sketch $y(n)$.
 	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%203/yn.py
 \end{lstlisting}
 \item Repeat the above exercise using a C code.
+\solution Run the following C code.
+\begin{lstlisting}
+	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%203/xn_yn.C
+\end{lstlisting}
 \end{enumerate}
 \section{$Z$-transform}
 \begin{enumerate}[label=\thesection.\arabic*]
@@ -327,6 +331,14 @@ resulting in \eqref{eq:shift1}. Similarly, it can be shown that
 \label{eq:z_trans_shift}
 	{\mathcal {Z}}\{x(n-k)\} = z^{-k}X(z)
 \end{equation}
+\item Obtain $X(z)$ for $x(n)$ defined in problem $3.1$\\
+\solution Finding Z transform of $x(n)$\\
+\begin{align}
+	X(z)&=\sum_{n=-\infty }^{\infty }x(n)z^{-n}\\
+	&=\sum_{n=0 }^{5}x(n)z^{-n}\\
+	&= 1 + 2z^{-1} + 3z^{-2} + 4z^{-3} + 2z^{-4} + z^{-5}
+\end{align}
+	
 \item Find
 %
 \begin{equation}
@@ -402,7 +414,6 @@ H\brak{e^{\j \omega}} = H\brak{z = e^{\j \omega}}.
 \end{equation}
 Plot $\abs{H\brak{e^{\j \omega}}}$.  Comment.  $H(e^{\j \omega})$ is
 known as the {\em Discret Time Fourier Transform} (DTFT) of $x(n)$.
-\\
 \solution The following code plots Fig. \ref{fig:dtft}.
 \begin{lstlisting}
 	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%204/%20dtft.py
@@ -413,9 +424,64 @@ known as the {\em Discret Time Fourier Transform} (DTFT) of $x(n)$.
 \caption{$\abs{H\brak{e^{\j\omega}}}$}
 \label{fig:dtft}
 \end{figure}
+\begin{align}
+	\left|H\brak{e^{\j\omega}}\right| &= \left|\frac{1 + e^{-2\j\omega}}{1 + \frac{1}{2}e^{-\j\omega}}\right| \\
+									  &= \sqrt{\frac{\brak{1 + \cos{2\omega}}^2 + \brak{\sin{2\omega}}^2}{\brak{1 + \frac{1}{2}\cos{\omega}}^2 + \brak{\frac{1}{2}\sin{\omega}}^2}}\\
+					0				  &= \sqrt{\frac{2\brak{1 + \cos{2\omega}}}{\frac{5}{4} + \cos{\omega}}} \\
+									  &= \sqrt{\frac{2\brak{2\cos^2{\omega}}}{\frac{5}{4} + \cos{\omega}}} \\
+									  &= \frac{4|\cos{\omega}|}{\sqrt{5 + 4\cos{\omega}}}
+\end{align}
+and so its fundamental period is $2\pi$.
+\item Express $x(n)$ in terms of $H\brak{e^{j \omega}}$.\\
+\solution
+\begin{align}
+     h(n) &= \frac{1}{2\pi} \int_{-\pi}^{\pi} H\brak{e^{\j \omega}}e^{j\omega n} \,d\omega \\
+     &= \frac{1}{2\pi} \int_{-\pi}^{\pi} \frac{1 + e^{-2\j\omega}}{1 + \frac12 e^{-\j\omega}} e^{j\omega n} \,d\omega 
+\end{align}
 \end{enumerate}
 \section{Impulse Response}
 \begin{enumerate}[label=\thesection.\arabic*]
+	\item Using long division, 
+find
+		\begin{align}
+			h(n), \quad n < 5
+		\end{align}
+		for H(z) in 
+		\eqref{eq:freq_resp}.
+\solution\\
+\begin{align}
+	H(z) &= \frac{1 + z^{-2}}{1 + \frac{1}{2}z^{-1}} \\
+	1+z^{-2} &= \left(1 + \frac{1}{2}z^{-1}\right)*\left(2z^{-1}-4\right) + 5 \\
+	H(z)&= \frac{\left(1 + \frac{1}{2}z^{-1}\right)*\left(2z^{-1}-4\right) + 5}{1 + \frac{1}{2}z^{-1}} \\
+	&= 2z^{-1}-4 + \frac{5}{1 + \frac{1}{2}z^{-1}}
+\end{align}
+Now,
+\begin{align}
+	\frac{5}{1 + \frac{1}{2}z^{-1}} &= 5\left(1-\frac{z^{-1}}{2}+\frac{z^{-2}}{4}-\frac{z^{-3}}{8}+\dots\right) \\
+	&= 5-\frac{5}{2}z^{-1}+\frac{5}{4}z^{-2}-\frac{5}{8}z^{-3}+\dots \\
+	&= \sum_{n = 0}^{\infty}  5 \left(\frac{-z^{-1}}{2}\right)^n
+\end{align}
+\begin{align}
+	H(z)&= 2z^{-1}-4 + \frac{5}{1 + \frac{1}{2}z^{-1}} \\
+	&= 2z^{-1}-4 + \sum_{n = 0}^{\infty}  5 \left(\frac{-z^{-1}}{2}\right)^n 
+\end{align}
+As $n<5$,
+\begin{align}
+	H(z) &= 2z^{-1}-4 + \sum_{n = 0}^{4}  5 \left(\frac{-z^{-1}}{2}\right)^n \\
+	H(z) &= 1-\frac{1}{2}z^{-1}+\frac{5}{4}z^{-2}-\frac{5}{8}z^{-3}+\frac{5}{16}z^{-4} \\
+	\implies h(n) &= \brak{1, \frac{-1}{2}, \frac{5}{4}, \frac{-5}{8}, \frac{5}{16}}
+\end{align}
+for general n,
+\begin{align}
+	% h(n) = 2z^{-1}-4+\sum_{n = 0}^{\infty}  5 \left(\frac{-z^{-1}}{2}\right)^{n-2} \\
+	h(n) = 
+	\begin{cases}
+		 1 & n = 0 \\
+		 -\dfrac{1}{2} & n = 1 \\
+		 \dfrac{3}{2} \brak{-\dfrac12}^{n-2} & n \ge 2
+	\end{cases}
+\end{align}
+		
 \item \label{prob:impulse_resp}
 Find an expression for $h(n)$ using $H(z)$, given that 
 %in Problem \ref{eq:ztransab} and \eqref{eq:anun}, given that
@@ -447,6 +513,14 @@ using \eqref{eq:anun} and \eqref{eq:z_trans_shift}.
 \end{figure}
 The sequence is convergnet to $0$ and hence bounded as well.
 %
+\item Convergent? Justify using the ratio test.\\
+\solution Using the ratio test for convergence
+	\begin{align}
+		\lim_{n \to \infty} \abs{\frac{h(n+1)}{h(n)}} &= \lim_{n \to \infty} \abs{\frac{\brak{-\frac12}^{n-1} \brak{\frac14 + 1}}{\brak{-\frac12}^{n-2} \brak{\frac14 + 1}}} \\
+		&= \lim_{n \to \infty} \abs{-\frac12} \\
+		&= \frac{1}{2} < 1
+	\end{align}
+	Therefore, $h(n)$ is convergent.
 \item The system with $h(n)$ is defined to be stable if
 \begin{equation}
 \sum_{n=-\infty}^{\infty}h(n) < \infty
@@ -468,6 +542,7 @@ Is the system defined by \eqref{eq:iir_filter} stable for the impulse response i
 	\end{align}
 	
 	Therefore, the system is stable.
+\item Verify the above result using a python code.
 \item 
 Compute and sketch $h(n)$ using 
 \begin{equation}
@@ -520,6 +595,24 @@ $y(n)$ in  Fig.
 \caption{$y(n)$ from the definition of convolution}
 \label{fig:ynconv}
 \end{figure}
+\item Express the above convolution using a Teoplitz matrix.\\
+\solution
+\begin{align}
+    \vec{x} &= \myvec{1 & 2	 & 3 & 4 & 2 & 1}^\top \\
+	\vec{h} &= \myvec{h_0 & h_1	 & \cdots & h_{N-1}}^\top \\
+     \vec{y} &= \vec{x} \circledast \vec{h} \\
+	\myvec{y_1 \\ y_2 \\ \vdots \\ y_{N+5}} &= \myvec{
+			h_0 & 0 & 0 & \cdots & 0 \\
+			h_1 & h_0 & 0 & \cdots & 0 \\
+			h_2 & h_1 & h_0 & \cdots & 0 \\
+			\vdots & \vdots & \vdots & \ddots & \vdots \\
+			h_{N-1} & h_{N-2} & h_{N-3} & \cdots & h_{N-6} \\
+			0 & h_{N-1} & h_{N-2} & \cdots & h_{N-5} \\
+			0 & 0 & h_{N-1} & \cdots & h_{N-4} \\
+			\vdots & \vdots & \vdots & \ddots & \vdots \\
+			0 & 0 & 0 & \cdots & h_{N-1} }
+               \myvec{1.0\\2.0\\3.0\\4.0\\2.0\\1.0}
+\end{align}
 \item Show that
 \begin{equation}
 y(n) =  \sum_{n=-\infty}^{\infty}x(n-k)h(k)
@@ -541,6 +634,7 @@ y(n) =  \sum_{n=-\infty}^{\infty}x(n-k)h(k)
 		\sum_{k=-\infty}^{\infty}x(k)h(n-k) &= \sum_{k=-\infty}^{\infty}x(n-k)h(k) \\
 		\implies x(n) * h(n) &= h(n) * x(n)
 	\end{align}
+
 \end{enumerate}
 %
 \section{DFT and FFT}

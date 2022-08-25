@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.2)  7 AUG 2022 15:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.2)  22 AUG 2022 09:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -743,90 +743,145 @@ LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 299.
+(hyperref)                removing `math shift' on input line 303.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 299.
+(hyperref)                removing `math shift' on input line 303.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--336
+
+ []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./figs/3.2 yn.pdf>]
 
-LaTeX Warning: Command \j invalid in math mode on input line 401.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 401.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 403.
+LaTeX Warning: Command \j invalid in math mode on input line 415.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 403.
+LaTeX Warning: Command \j invalid in math mode on input line 415.
 
 <figs/4.5 dtft.pdf, id=164, 462.52798pt x 346.89601pt>
 File: figs/4.5 dtft.pdf Graphic file (type pdf)
 <use figs/4.5 dtft.pdf>
-Package pdftex.def Info: figs/4.5 dtft.pdf  used on input line 412.
+Package pdftex.def Info: figs/4.5 dtft.pdf  used on input line 423.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
-LaTeX Warning: Command \j invalid in math mode on input line 413.
+LaTeX Warning: Command \j invalid in math mode on input line 424.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 413.
+LaTeX Warning: Command \j invalid in math mode on input line 424.
 
-<figs/5.2 hn.pdf, id=170, 462.52798pt x 346.89601pt>
+
+LaTeX Warning: Command \j invalid in math mode on input line 433.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 433.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 433.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 433.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 433.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 433.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 440.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 440.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 440.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 440.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 440.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 440.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--452
+
+ []
+
+
+Underfull \vbox (badness 7433) has occurred while \output is active []
+
+ [3 <./figs/4.5 dtft.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<figs/5.2 hn.pdf, id=241, 462.52798pt x 346.89601pt>
 File: figs/5.2 hn.pdf Graphic file (type pdf)
 <use figs/5.2 hn.pdf>
-Package pdftex.def Info: figs/5.2 hn.pdf  used on input line 444.
+Package pdftex.def Info: figs/5.2 hn.pdf  used on input line 510.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-[3 <./figs/4.5 dtft.pdf> <./figs/5.2 hn.pdf>]
-<figs/5.4 hndef.pdf, id=279, 462.52798pt x 346.89601pt>
+ [4 <./figs/5.2 hn.pdf>]
+<figs/5.4 hndef.pdf, id=314, 462.52798pt x 346.89601pt>
 File: figs/5.4 hndef.pdf Graphic file (type pdf)
 <use figs/5.4 hndef.pdf>
-Package pdftex.def Info: figs/5.4 hndef.pdf  used on input line 488.
+Package pdftex.def Info: figs/5.4 hndef.pdf  used on input line 563.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<figs/5.5 ynconv.pdf, id=283, 462.52798pt x 346.89601pt>
+<figs/5.5 ynconv.pdf, id=318, 462.52798pt x 346.89601pt>
 File: figs/5.5 ynconv.pdf Graphic file (type pdf)
 <use figs/5.5 ynconv.pdf>
-Package pdftex.def Info: figs/5.5 ynconv.pdf  used on input line 519.
+Package pdftex.def Info: figs/5.5 ynconv.pdf  used on input line 594.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./figs/5.4 hndef.pdf> <./figs/5.5 ynconv.pdf>]
+ [5 <./figs/5.4 hndef.pdf> <./figs/5.5 ynconv.pdf>]
 
-LaTeX Warning: Command \j invalid in math mode on input line 551.
+LaTeX Warning: Command \j invalid in math mode on input line 645.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 560.
+LaTeX Warning: Command \j invalid in math mode on input line 654.
 
-<figs/6.3 yndft.pdf, id=386, 462.52798pt x 346.89601pt>
+<figs/6.3 yndft.pdf, id=423, 462.52798pt x 346.89601pt>
 File: figs/6.3 yndft.pdf Graphic file (type pdf)
 <use figs/6.3 yndft.pdf>
-Package pdftex.def Info: figs/6.3 yndft.pdf  used on input line 572.
+Package pdftex.def Info: figs/6.3 yndft.pdf  used on input line 666.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-[5 <./figs/6.3 yndft.pdf>] (./main.aux)
+[6 <./figs/6.3 yndft.pdf>] [7
+
+] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EDE0BD39395C52B880A8A7EB6EB76C7D;824.
  ) 
 Here is how much of TeX's memory you used:
- 16326 strings out of 478287
- 255859 string characters out of 5849290
- 806929 words of memory out of 5000000
- 34144 multiletter control sequences out of 15000+600000
+ 16370 strings out of 478287
+ 256366 string characters out of 5849290
+ 806956 words of memory out of 5000000
+ 34147 multiletter control sequences out of 15000+600000
  530612 words of font info for 150 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,10n,63p,289b,1477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,17n,63p,289b,1477s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 157667 bytes).
+Output written on main.pdf (7 pages, 167512 bytes).
 PDF statistics:
- 532 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
- 118 named destinations out of 1000 (max. 500000)
+ 590 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
+ 159 named destinations out of 1000 (max. 500000)
  92 words of extra memory for PDF output out of 10000 (max. 10000000)
 

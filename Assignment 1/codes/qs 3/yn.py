@@ -17,15 +17,22 @@ yn=np.loadtxt('xn_yn_output.dat',dtype='double')
 # plt.ylabel('$x(n)$')
 # plt.grid()# minor
 
+plt.subplot(2, 1, 1)
+plt.stem(range(0,6),x)
+plt.title('Digital Filter Input-Output')
+plt.ylabel('$x(n)$')
+plt.grid()# minor
 
-# plt.subplot(2, 1, 2)
+
+plt.subplot(2, 1, 2)
 plt.stem(range(0,k),yn)
 plt.xlabel('$n$')
 plt.ylabel('$y(n)$')
 plt.grid()# minor
-
+# plt.subplot(2, 1, 2)
+plt.show()
 #If using termux
-plt.savefig('../../figs/yn.pdf')
+#plt.savefig('../../figs/yn.pdf')
 # plt.savefig('../figs/xnyn.eps')
 # subprocess.run(shlex.split("termux-open ../figs/xnyn.pdf"))
 #else

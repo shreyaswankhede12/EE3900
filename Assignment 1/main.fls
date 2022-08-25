@@ -915,12 +915,12 @@ INPUT ./figs/4.5 dtft.pdf
 INPUT figs/4.5 dtft.pdf
 INPUT ./figs/4.5 dtft.pdf
 INPUT ./figs/4.5 dtft.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/txfonts/txi.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtxi.tfm
 INPUT ./figs/5.2 hn.pdf
 INPUT figs/5.2 hn.pdf
 INPUT ./figs/5.2 hn.pdf
 INPUT ./figs/5.2 hn.pdf
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/txfonts/txi.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/rtxi.tfm
 INPUT ./figs/5.4 hndef.pdf
 INPUT figs/5.4 hndef.pdf
 INPUT ./figs/5.4 hndef.pdf
