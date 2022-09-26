@@ -543,6 +543,10 @@ Is the system defined by \eqref{eq:iir_filter} stable for the impulse response i
 	
 	Therefore, the system is stable.
 \item Verify the above result using a python code.
+\solution :\\
+\begin{lstlisting}
+	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%205/5.6.py
+\end{lstlisting}
 \item 
 Compute and sketch $h(n)$ using 
 \begin{equation}
@@ -552,7 +556,48 @@ h(n) + \frac{1}{2}h(n-1) = \delta(n) + \delta(n-2),
 %
 This is the definition of $h(n)$.
 \\
-\solution The following code plots Fig. \ref{fig:hndef}. Note that this is the same as Fig. 
+\solution \begin{equation}
+	\label{eq:iir_filter_h}
+	h(n) + \frac{1}{2}h(n-1) = \delta(n) + \delta(n-2), 
+	\end{equation}
+	%
+	This is the definition of $h(n)$.
+	\\
+	\begin{equation}
+		 h(0) = 1
+	\end{equation}
+	Now, for $n = 1$,
+	\begin{align}
+		 h(1) + \frac12 h(0) &= \delta(1) + \delta(-1) = 0 \\
+		 \implies h(1) &= - \frac{1}{2} h(0) = -\frac{1}{2}
+	\end{align}
+	For $n = 2$,
+	\begin{align}
+		 h(2) + \frac12 h(1) &= \delta(2) + \delta(0) = 1 \\
+		 \implies h(2) &= 1 - \frac{1}{2} h(1) = \frac{5}{4}
+	\end{align}
+	For $n > 2$, the right hand side of the equation is always zero. Thus,
+	\begin{align}
+		 h(n) &= -\frac{1}{2} h(n-1) \qquad n > 2 \\
+		 h(3) &= \frac{5}{4} \brak{-\frac12} \\
+		 h(4) &= \frac{5}{4} \brak{-\frac12}^2 \\
+		 &~\vdots \\
+		 h(n) &= \frac{5}{4} \brak{-\frac12}^{n-2}
+	\end{align}
+	Therefore,
+	\begin{align}
+		 h(n) = 
+		 \begin{cases}
+			  1 & n = 0 \\
+			  -\dfrac{1}{2} & n = 1 \\
+			  \dfrac{5}{4} \brak{-\dfrac12}^{n-2} & n \ge 2
+		 \end{cases}
+	\end{align}
+	Thus, it is bounded and convergent to $0$
+	\begin{equation}
+		 \lim_{n \to \infty} h(n) = 0
+	\end{equation} 
+The following code plots Fig. \ref{fig:hndef}. Note that this is the same as Fig. 
 \ref{fig:hn}. 
 %
 \begin{lstlisting}
@@ -579,7 +624,6 @@ Comment. The operation in \eqref{eq:convolution} is known as
 		x(n)*h(n) &= \sum_{k=-\infty}^{\infty}x(k)h(n-k) \\
 		&= \sum_{k=0}^{5}x(k)h(n-k)
 	\end{align}
-	since $x(k) = 0$ for $k < 0$ and $k > 5$ 
 %
 \\
 \solution The following code plots Fig. \ref{fig:ynconv}. Note that this is the same as 
@@ -644,32 +688,150 @@ Compute
 \begin{equation}
 X(k) \define \sum _{n=0}^{N-1}x(n) e^{-\j2\pi kn/N}, \quad k = 0,1,\dots, N-1
 \end{equation}
-and $H(k)$ using $h(n)$.
+and $H(k)$ using $h(n)$.\\
+\solution Download the following Python code that plots Fig. \ref{fig-6.1}.
+	\begin{lstlisting}
+		wget https://github.com/Ankit-Saha-2003/EE3900/raw/main/Assignment_1/codes/6.1.py
+	\end{lstlisting}
+	
+	Run the code by executing
+	\begin{lstlisting}
+		python 6.1.py
+	\end{lstlisting}
+
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figs/6.1.png}
+		\caption{Plots of the real parts of the discrete Fourier transforms of $x(n)$ and $h(n)$}
+		\label{fig-6.1}	
+	\end{figure}
 \item Compute 
 \begin{equation}
 Y(k) = X(k)H(k)
 \end{equation}
+\solution Download the following Python code that plots Fig. \ref{fig-6.2}.
+	\begin{lstlisting}
+		wget https://github.com/Ankit-Saha-2003/EE3900/raw/main/Assignment_1/codes/6.2.py
+	\end{lstlisting}
+	
+	Run the code by executing
+	\begin{lstlisting}
+		python 6.2.py
+	\end{lstlisting}
+
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figs/6.2.png}
+		\caption{Plot of $Y(k)$}
+		\label{fig-6.2}	
+	\end{figure}
+
 \item Compute
 \begin{equation}
  y\brak{n}={\frac {1}{N}}\sum _{k=0}^{N-1}Y\brak{k}\cdot e^{\j 2\pi kn/N},\quad n = 0,1,\dots, N-1
 \end{equation}
 \\
-\solution The following code plots Fig. \ref{fig:ynconv}. Note that this is the same as 
-$y(n)$ in  Fig. 
-\ref{fig:xnyn}. 
-%
-\begin{lstlisting}
-	https://github.com/shreyaswankhede12/EE3900/blob/master/Assignment%201/codes/qs%206/yndft.py
-\end{lstlisting}
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\columnwidth]{figs/6.3 yndft}
-\caption{$y(n)$ from the DFT}
-\label{fig:yndft}
-\end{figure}
+\solution Download the following Python code that plots Fig. \ref{fig-6.3}.
+	\begin{lstlisting}
+		wget https://github.com/Ankit-Saha-2003/EE3900/raw/main/Assignment_1/codes/6.3.py
+	\end{lstlisting}
+	
+	Run the code by executing
+	\begin{lstlisting}
+		python 6.3.py
+	\end{lstlisting}
+
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=\columnwidth]{figs/6.3.png}
+		\caption{Plot of the inverse discrete Fourier transform of $Y(k)$}
+		\label{fig-6.3}	
+	\end{figure}
+	
+	The plot is exactly the same as that obtained in Fig. 3.2. Therefore, we conclude that 
+	\begin{align}
+		y(n) &= x(n) * h(n) \\
+		\iff Y(k) &= X(k)H(k)
+	\end{align}
 \item Repeat the previous exercise by computing $X(k), H(k)$ and $y(n)$ through FFT and 
-IFFT.
-\item Wherever possible, express all the above equations as matrix equations.
+IFFT.\\
+\solution Download the following Python code that plots Fig. \ref{fig-6.4}.
+	\begin{lstlisting}
+		wget https://github.com/Ankit-Saha-2003/EE3900/raw/main/Assignment_1/codes/6.4.py
+	\end{lstlisting}
+	
+	Run the code by executing
+	\begin{lstlisting}
+		python 6.4.py
+	\end{lstlisting}
+
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=\columnwidth]{./figs/6.4.png}
+		\caption{Plot of $y(n)$ by fast Fourier transform}
+		\label{fig-6.4}	
+	\end{figure}
+	
+	The plot is exactly the same as that obtained in Fig. 3.2.
+\item Wherever possible, express all the above equations as matrix equations.\\
+\solution
+	\begin{align}
+		\vec{x} &= \myvec{x_0 & x_1	 & \cdots & x_{N-1}}^\top \\
+		\vec{h} &= \myvec{x_0 & x_1	 & \cdots & x_{N-1}}^\top \\
+		\vec{y} &= \vec{x} \circledast \vec{h} \\
+		\myvec{y_1 \\ y_2 \\ \vdots \\ y_{2N - 1}} &= \myvec{
+			h_0 & 0 & 0 & \cdots & 0 \\
+			h_1 & h_0 & 0 & \cdots & 0 \\
+			h_2 & h_1 & h_0 & \cdots & 0 \\
+			\vdots & \vdots & \vdots & \ddots & \vdots \\
+			h_{N-1} & h_{N-2} & h_{N-3} & \cdots & h_0 \\
+			0 & h_{N-1} & h_{N-2} & \cdots & h_1 \\
+			0 & 0 & h_{N-1} & \cdots & h_2 \\
+			\vdots & \vdots & \vdots & \ddots & \vdots \\
+			0 & 0 & 0 & \cdots & h_{N-1}
+		}		
+		\myvec{x_1\\x_2\\ \vdots \\x_N}
+	\end{align}
+	
+	The convolution can be written using a Toeplitz matrix. 
+	
+	Consider the DFT matrix
+	\begin{align}
+		\vec{W} = \myvec{
+			1 & 1 & 1 & 1 & \cdots & 1 \\
+			1 & \omega & \omega^2 & \omega^3 & \cdots & \omega^{N-1} \\
+			1 & \omega^2 & \omega^4 & \omega^6 & \cdots & \omega^{2(N-1)} \\
+			1 & \omega^3 & \omega^6 & \omega^9 & \cdots & \omega^{3(N-1)} \\
+			\vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\ 
+			1 & \omega^{N-1} & \omega^{2(N-1)} & \omega^{3(N-1)} & \cdots & \omega^{(N-1)(N-1)}
+		}
+	\end{align}
+	
+	where $\omega = e^{-\j 2\pi/N}$ is the $N^{\mathrm{th}}$ root of unity
+	
+	Then the discrete Fourier transforms of $\vec{x}$ and $\vec{h}$ are given by
+	\begin{align}
+		\vec{X} &= \vec{W} \vec{x} \\
+		\vec{H} &= \vec{W} \vec{h}
+	\end{align}
+	
+	$\vec{Y}$ is then given by
+	\begin{equation}
+		\vec{Y} = \vec{X} \circ \vec{H}
+	\end{equation}
+	where $\circ$ denotes the Hadamard product (element-wise multiplication)
+	
+	But $\vec{Y}$ is the discrete Fourier transform of the filter output $\vec{y}$
+	\begin{equation}
+		\vec{Y} = \vec{W} \vec{y}
+	\end{equation}
+	
+	Thus,
+	\begin{align}
+		\vec{W} \vec{y} &= \vec{X} \circ \vec{H} \\
+		\implies \vec{y} &= \vec{W}^{-1} \brak{\vec{X} \circ \vec{H}} \\
+		&= \vec{W}^{-1} \brak{\vec{W} \vec{x} \circ \vec{W} \vec{h}}
+	\end{align}
 \end{enumerate}
 %
 \section{Exercises}

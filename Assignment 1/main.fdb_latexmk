@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1661141596 "/home/shreyas/Documents/gvv/EE course/Assignment 1/main.tex" "main.pdf" "main" 1661141596
+["pdflatex"] 1664159620 "/home/shreyas/Documents/gvv/EE course/Assignment 1/main.tex" "main.pdf" "main" 1664159621
   "/etc/texmf/web2c/texmf.cnf" 1656677652 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/shreyas/Documents/gvv/EE course/Assignment 1/main.tex" 1661141595 23660 e376cd95bc37dca1fa2459cdc3758893 ""
+  "/home/shreyas/Documents/gvv/EE course/Assignment 1/main.tex" 1664159620 28484 cc0d6f5ed212e5eec3cc1c44302a9931 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -145,11 +145,14 @@
   "figs/5.2 hn.pdf" 1659355714 14300 49e551266bcbaf8bcea0be06171634e3 ""
   "figs/5.4 hndef.pdf" 1659355289 14354 74f08e374e61f0a9249e604855f62058 ""
   "figs/5.5 ynconv.pdf" 1659355342 14207 9144c3f60856ba57535b0113ea45b3b8 ""
-  "figs/6.3 yndft.pdf" 1659355377 13840 5c54f2ef6f416e205d36986528cee372 ""
-  "main.aux" 1661141596 4252 bb0ff829efc7da9ad0e4ecd5706ca95c "pdflatex"
-  "main.out" 1661141596 824 ede0bd39395c52b880a8a7eb6eb76c7d "pdflatex"
-  "main.tex" 1661141595 23660 e376cd95bc37dca1fa2459cdc3758893 ""
-  "main.toc" 1661141596 495 0af47e7b72bb5e41791d8886c6a9af7a "pdflatex"
+  "figs/6.1.png" 1663766999 22597 2bb3ce6050cf7fca79df3824c2ea6a32 ""
+  "figs/6.2.png" 1663768032 15050 4c486f1459310bf282c5db7c5ccccc87 ""
+  "figs/6.3.png" 1663768962 20794 6afb7337107895a5e634f472aaf9682d ""
+  "figs/6.4.png" 1663769875 19252 07f03e2eb03da1287ab9253ce31bdc8a ""
+  "main.aux" 1664159621 5249 e36c912af434e374c97c678956ebe751 "pdflatex"
+  "main.out" 1664159621 824 ede0bd39395c52b880a8a7eb6eb76c7d "pdflatex"
+  "main.tex" 1664159620 28484 cc0d6f5ed212e5eec3cc1c44302a9931 ""
+  "main.toc" 1664159621 495 1ac1ddc70ecc4eef7bb664d04f8a9f96 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

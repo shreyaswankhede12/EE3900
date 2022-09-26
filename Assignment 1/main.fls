@@ -929,10 +929,26 @@ INPUT ./figs/5.5 ynconv.pdf
 INPUT figs/5.5 ynconv.pdf
 INPUT ./figs/5.5 ynconv.pdf
 INPUT ./figs/5.5 ynconv.pdf
-INPUT ./figs/6.3 yndft.pdf
-INPUT figs/6.3 yndft.pdf
-INPUT ./figs/6.3 yndft.pdf
-INPUT ./figs/6.3 yndft.pdf
+INPUT ./figs/6.1.png
+INPUT ./figs/6.1.png
+INPUT figs/6.1.png
+INPUT ./figs/6.1.png
+INPUT ./figs/6.1.png
+INPUT ./figs/6.2.png
+INPUT ./figs/6.2.png
+INPUT figs/6.2.png
+INPUT ./figs/6.2.png
+INPUT ./figs/6.2.png
+INPUT ./figs/6.3.png
+INPUT ./figs/6.3.png
+INPUT figs/6.3.png
+INPUT ./figs/6.3.png
+INPUT ./figs/6.3.png
+INPUT ./figs/6.4.png
+INPUT ./figs/6.4.png
+INPUT ./figs/6.4.png
+INPUT ./figs/6.4.png
+INPUT ./figs/6.4.png
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
