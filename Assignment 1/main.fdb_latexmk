@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1664159620 "/home/shreyas/Documents/gvv/EE course/Assignment 1/main.tex" "main.pdf" "main" 1664159621
+["pdflatex"] 1664344388 "/home/shreyas/Documents/gvv/EE course/Assignment 1/main.tex" "main.pdf" "main" 1664344388
   "/etc/texmf/web2c/texmf.cnf" 1656677652 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/shreyas/Documents/gvv/EE course/Assignment 1/main.tex" 1664159620 28484 cc0d6f5ed212e5eec3cc1c44302a9931 ""
+  "/home/shreyas/Documents/gvv/EE course/Assignment 1/main.tex" 1664344387 44424 f0ae7f0948582aaf975d00fd8de98962 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -36,7 +36,6 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm" 1136768653 988 098ca7e8cc5647b9ac21b82dbdce1f01 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm" 1136768653 1084 75e807e9e71f7a312e4e1187dce5e93b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb" 1136849748 14606 238072bd1ce11e3dff8451a5a2608194 ""
-  "/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb" 1136849748 6330 bdd610a36762742dd8a518bf9f97b968 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb" 1232065820 13806 49b888f4605a088e66b9eb4fee320a6e ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb" 1136849748 6339 e2b78706efdc360ee6aec9b6e20211a7 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb" 1206746551 11099 83316203930a07cc1ec0d29d0f0dd35c ""
@@ -149,10 +148,12 @@
   "figs/6.2.png" 1663768032 15050 4c486f1459310bf282c5db7c5ccccc87 ""
   "figs/6.3.png" 1663768962 20794 6afb7337107895a5e634f472aaf9682d ""
   "figs/6.4.png" 1663769875 19252 07f03e2eb03da1287ab9253ce31bdc8a ""
-  "main.aux" 1664159621 5249 e36c912af434e374c97c678956ebe751 "pdflatex"
-  "main.out" 1664159621 824 ede0bd39395c52b880a8a7eb6eb76c7d "pdflatex"
-  "main.tex" 1664159620 28484 cc0d6f5ed212e5eec3cc1c44302a9931 ""
-  "main.toc" 1664159621 495 1ac1ddc70ecc4eef7bb664d04f8a9f96 "pdflatex"
+  "figs/7.11.png" 1664333147 14770 ba2c82485764bbeaf3e09877c0457180 ""
+  "figs/7.12.png" 1664333500 14468 e2a87b62c31d9f0f2809c3c85656a6fe ""
+  "figs/7.14.png" 1664344362 36833 34f98de49cef7696a5dd7cdf45e911e3 ""
+  "main.aux" 1664344388 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.out" 0 -1 0 "pdflatex"
+  "main.tex" 1664344387 44424 f0ae7f0948582aaf975d00fd8de98962 ""
   (generated)
   "main.aux"
   "main.log"
