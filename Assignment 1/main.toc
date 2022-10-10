@@ -5,3 +5,4 @@
 \contentsline {section}{\numberline {5}Impulse Response}{3}{section.5}%
 \contentsline {section}{\numberline {6}DFT and FFT}{6}{section.6}%
 \contentsline {section}{\numberline {7}FFT}{9}{section.7}%
+\contentsline {section}{\numberline {8}Exercises}{14}{section.8}%
