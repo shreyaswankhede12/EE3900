@@ -1,0 +1,135 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{txfonts}         
+\usepackage{listings}
+\usepackage{lstautogobble}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{polynom}
+\usepackage{siunitx}
+\usepackage{verbatim}
+
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\sbrak}[1]{\ensuremath{\left[#1\right]}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\var}[1]{\mathrm{Var}\left[ #1 \right]}
+\providecommand{\der}[1]{\mathrm{d} #1}
+\providecommand{\gauss}[2]{\mathcal{N}\ensuremath{\left(#1,#2\right)}}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\z}[1]{{\mathcal{Z}}\{#1\}}
+\providecommand{\ztrans}{\overset{\mathcal{Z}}{ \rightleftharpoons}}
+
+\providecommand{\parder}[2]{\frac{\partial}{\partial #2} \brak{#1}}
+
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+
+%\numberwithin{equation}{section}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand\thesection{\arabic{section}}
+
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\makeatletter
+\def\pld@CF@loop#1+{%
+    \ifx\relax#1\else
+        \begingroup
+          \pld@AccuSetX11%
+          \def\pld@frac{{}{}}\let\pld@symbols\@empty\let\pld@vars\@empty
+          \pld@false
+          #1%
+          \let\pld@temp\@empty
+          \pld@AccuIfOne{}{\pld@AccuGet\pld@temp
+                            \edef\pld@temp{\noexpand\pld@R\pld@temp}}%
+           \pld@if \pld@Extend\pld@temp{\expandafter\pld@F\pld@frac}\fi
+           \expandafter\pld@CF@loop@\pld@symbols\relax\@empty
+           \expandafter\pld@CF@loop@\pld@vars\relax\@empty
+           \ifx\@empty\pld@temp
+               \def\pld@temp{\pld@R11}%
+           \fi
+          \global\let\@gtempa\pld@temp
+        \endgroup
+        \ifx\@empty\@gtempa\else
+            \pld@ExtendPoly\pld@tempoly\@gtempa
+        \fi
+        \expandafter\pld@CF@loop
+    \fi}
+\def\pld@CMAddToTempoly{%
+    \pld@AccuGet\pld@temp\edef\pld@temp{\noexpand\pld@R\pld@temp}%
+    \pld@CondenseMonomials\pld@false\pld@symbols
+    \ifx\pld@symbols\@empty \else
+        \pld@ExtendPoly\pld@temp\pld@symbols
+    \fi
+    \ifx\pld@temp\@empty \else
+        \pld@if
+            \expandafter\pld@IfSum\expandafter{\pld@temp}%
+                {\expandafter\def\expandafter\pld@temp\expandafter
+                    {\expandafter\pld@F\expandafter{\pld@temp}{}}}%
+                {}%
+        \fi
+        \pld@ExtendPoly\pld@tempoly\pld@temp
+        \pld@Extend\pld@tempoly{\pld@monom}%
+    \fi}
+\makeatother
+
+\lstset {
+	frame=single, 
+	breaklines=true,
+	columns=fullflexible,
+	autogobble=true
+}             
+                               
+\title{Assignment 2 \\ \Large EE3900: Linear Systems and Signal Processing \\ \large Indian Institute of Technology Hyderabad}
+\author{Shreyas wankhede \\ \normalsize AI21BTECH11028\\ \vspace*{20pt} \normalsize 23 Sept 2022 \\ \vspace*{20pt} \Large Discrete-time Signal Processing \\ \large Oppenheim and Schafer}
+
+
+\begin{document}
+
+	\maketitle
+    \textbf{ Problem 2.16 (c):} For the given difference equation 
+    \begin{align}
+     y[n] -\dfrac{y[n-1]}{4} -\dfrac{y[n-2]}{8}=3x[n]
+    \end{align}
+     show that causal LTI system is stable and anticausal LTI system is unstable.\\
+    \solution Let $y_{h}[n]$ be the homogenous solution that solves the difference equation.\\
+    It  is in the form of $y_{h}[n]=\sum{A(c)^{n}}$, where c's solve the quadratic equation
+    \begin{align}
+    c^2 -\dfrac{c}{4} -\dfrac{1}{8}=0
+    \end{align}
+    So, for $c=\frac{1}{2}$ and $c=\dfrac{-1}{4}$, the general form of homogenous solution is
+    \begin{align}
+        y_{h}[n]=A_{1}(\dfrac{1}{2})^n + A_{2}(\dfrac{-1}{4})^n
+    \end{align}
+    Taking inverse Z- transform on both sides we get,\\
+    \begin{align}
+        H(z)&=\dfrac{3}{1-\dfrac{z^{-1}}{4}-\dfrac{z^{-2}}{8}}\\
+        &=\dfrac{1}{1+\dfrac{z^{-1}}{4}}+\dfrac{2}{1-\dfrac{z^{-1}}{2}}
+    \end{align}
+    The causal impulse response corresponds to assuming that the region of convergence extends outside the outermost pole,making
+    \begin{align}
+        h_{c}(n)=[(\dfrac{-1}{4})^n+ 2(\dfrac{1}{2})^n]u[n]
+    \end{align}
+    The anticausal impulse response corresponds to assuming that the region of convergence is inside the innermost pole making
+    \begin{align}
+        h_{ac}(n)=-[(\dfrac{-1}{4})^n+ 2(\dfrac{1}{2})^n]u[-n-1]
+    \end{align}
+    From the above two equations it is very clear that $h_{c}[n]$ is absolutely summable while $h_{ac}[n]$ grows without bounds.\\
+    Thus causal LTI system is stable while anticausal LTI system is unstable.
+
+\end{document}
+    
