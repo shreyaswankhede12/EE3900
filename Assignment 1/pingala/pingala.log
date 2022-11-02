@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.2)  25 OCT 2022 18:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.2)  26 OCT 2022 11:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -687,10 +687,6 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 22
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 242.
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
-File: ts1txr.fd 2000/12/15 v3.1
-)
 <../figs/1_1.png, id=19, 462.528pt x 346.896pt>
 File: ../figs/1_1.png Graphic file (type png)
 <use ../figs/1_1.png>
@@ -722,7 +718,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
  <../figs/1_1.png> <../figs/1.2.png>]
-<../figs/2_1.png, id=62, 462.528pt x 346.896pt>
+<../figs/2_1.png, id=61, 462.528pt x 346.896pt>
 File: ../figs/2_1.png Graphic file (type png)
 <use ../figs/2_1.png>
 Package pdftex.def Info: ../figs/2_1.png  used on input line 315.
@@ -733,40 +729,42 @@ Overfull \hbox (21.32742pt too wide) detected at line 326
  []
 
 
-Underfull \vbox (badness 2119) has occurred while \output is active []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <../figs/1.3.png> <../figs/1.4.png> <../figs/2_1.png>]
-<../figs/2_2.png, id=95, 462.528pt x 346.896pt>
+<../figs/2_2.png, id=91, 462.528pt x 346.896pt>
 File: ../figs/2_2.png Graphic file (type png)
 <use ../figs/2_2.png>
 Package pdftex.def Info: ../figs/2_2.png  used on input line 365.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3078) has occurred while \output is active []
 
  [3 <../figs/2_2.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4] (./pingala.aux)
+
+Underfull \vbox (badness 1789) has occurred while \output is active []
+
+ [4] [5
+
+] (./pingala.aux)
 Package rerunfilecheck Info: File `pingala.out' has not changed.
 (rerunfilecheck)             Checksum: 6EF0FDA02AE42AB5EB9699AF63378C50;377.
  ) 
 Here is how much of TeX's memory you used:
- 16229 strings out of 478287
- 254363 string characters out of 5849290
- 831931 words of memory out of 5000000
- 34060 multiletter control sequences out of 15000+600000
- 530612 words of font info for 150 fonts, out of 8000000 for 9000
+ 16192 strings out of 478287
+ 253877 string characters out of 5849290
+ 802931 words of memory out of 5000000
+ 34027 multiletter control sequences out of 15000+600000
+ 529951 words of font info for 148 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,14n,63p,296b,1571s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on pingala.pdf (4 pages, 163484 bytes).
+ 60i,14n,63p,296b,1312s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on pingala.pdf (5 pages, 159567 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
+ 255 PDF objects out of 1000 (max. 8388607)
  211 compressed objects within 3 object streams
- 119 named destinations out of 1000 (max. 500000)
+ 120 named destinations out of 1000 (max. 500000)
  55 words of extra memory for PDF output out of 10000 (max. 10000000)
 

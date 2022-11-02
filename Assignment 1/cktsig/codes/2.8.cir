@@ -1,0 +1,14 @@
+Problem 2.8
+V1 v1 0 1
+V2 v2 0 2
+R1 vc v1 1
+R2 vc v2 2
+C0 vc 0 1u ic=0
+.tran 100u 5u uic
+
+.control
+run
+wrdata 2.8.dat V(vc)
+.endc
+
+.end
