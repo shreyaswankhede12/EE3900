@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1667305595 "/home/shreyas/Documents/gvv/EE course/Assignment 1/cktsig/main.tex" "main.pdf" "main" 1667305596
+["pdflatex"] 1667451552 "/home/shreyas/Documents/gvv/EE course/Assignment 1/cktsig/main.tex" "main.pdf" "main" 1667451553
   "/etc/texmf/web2c/texmf.cnf" 1656677652 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/shreyas/Documents/gvv/EE course/Assignment 1/cktsig/main.tex" 1667305594 20046 3a770bdd74e33af359e0efe7a2b5404d ""
+  "/home/shreyas/Documents/gvv/EE course/Assignment 1/cktsig/main.tex" 1667451551 20049 d3a5e6416c990c00f8499e3bfed5f186 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -223,10 +223,10 @@
   "figs/4.3.png" 1667302598 18382 ba91c7e6f2d2331597321c770b70beae ""
   "figs/ckt.jpg" 1667305004 69298 63890edd9fcac75851d5561bfccbbec3 ""
   "figs/lap-ckt.jpg" 1667305308 144596 60230f709c71f4dc5cd9c27272bc7bfb ""
-  "main.aux" 1667305596 4373 eb0080760f4dfc56bc47298f6c2c2b64 "pdflatex"
-  "main.out" 1667305596 501 d3bf9c80be444e36f35564b54c366050 "pdflatex"
-  "main.tex" 1667305594 20046 3a770bdd74e33af359e0efe7a2b5404d ""
-  "main.toc" 1667305596 288 202447620c7adc1e2f8b553f76e282e0 "pdflatex"
+  "main.aux" 1667451553 4373 eb0080760f4dfc56bc47298f6c2c2b64 "pdflatex"
+  "main.out" 1667451553 501 d3bf9c80be444e36f35564b54c366050 "pdflatex"
+  "main.tex" 1667451551 20049 d3a5e6416c990c00f8499e3bfed5f186 ""
+  "main.toc" 1667451553 288 202447620c7adc1e2f8b553f76e282e0 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
